@@ -31,13 +31,13 @@ const Blogdetail = () => {
             {selectedBlogs?.category}
           </p>
         </div>
-        <h3 className="font-bold font-[Caveat] text-center lg:text-2xl md:text-[22px] text-[14px]">
+        <h3 className="font-bold font-[Caveat] text-center lg:text-2xl md:text-[22px] text-[16px]">
           {selectedBlogs?.excerpt}
         </h3>
-        <p className="text-start mx-6 text-slate-700">
+        <p className="text-start lg:mx-6 md:mx-4 mx-2 text-[12px] md:text-[16px] lg:text-[18px] text-slate-700">
           {selectedBlogs?.content}
         </p>
-        <p className="text-start mx-6 text-slate-700">
+      <p className="text-start lg:mx-6 md:mx-4 mx-2 text-[12px] md:text-[16px] lg:text-[18px] text-slate-700">
           {selectedBlogs?.content}
         </p>
         <img
@@ -45,7 +45,7 @@ const Blogdetail = () => {
           alt={selectedBlogs?.title}
           className="w-[95%] mx-auto my-3 rounded-md"
         />
-        <p className="text-start mx-6 text-slate-700">
+      <p className="text-start lg:mx-6 md:mx-4 mx-2 text-[12px] md:text-[16px] lg:text-[18px] text-slate-700">
           {selectedBlogs?.content}
         </p>
         <Link
