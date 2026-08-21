@@ -15,7 +15,7 @@ const Blogdetail = () => {
         alt={selectedBlogs?.title}
         className="w-full md:h-100 lg:h-150 h-56 relative"
       />
-      <div className="flex flex-col bg-gray-50 relative z-10 mx-auto md:-mt-46 lg:-mt-46 -mt-30 w-[70%] px-2 py-4  gap-3 mb-10">
+      <div className="flex flex-col bg-gray-50 relative z-10 mx-auto md:-mt-46 lg:-mt-46 -mt-30 md:w-[70%] lg:w-[70%] w-[80%] px-2 py-4  gap-3 mb-10">
         <h1 className="text-start font-black font-[Caveat] md:text-2xl lg:text-2xl text-[15px]">
           <span className="font-[Lobster] font-light md:text-sm lg:text-sm text-[12px]">Written By: </span>
           {selectedBlogs?.author}
