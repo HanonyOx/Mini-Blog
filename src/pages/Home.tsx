@@ -192,19 +192,19 @@ const Home = () => {
           </span>
         </h1>
       </div>
-      <div className="md:grid md:grid-cols-3 lg:grid lg:grid-cols-4 grid grid-cols-1 gap-1 w-11/12 container mx-auto mt-3">
+      <div className="md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 grid grid-cols-1 md:gap-2 gap-5 w-11/12 container mx-auto mt-5">
         {currentBlogs.map((b) => {
           return (
-            <div key={b.id}>
-              <div className="flex flex-col mr-3 rounded-2xl hover:bg-slate-900 hover:text-white items-center bg-gray-200 lg:w-85 h-100 mb-3">
+            <div key={b.id} className="flex justify-center items-center">
+              <div className="flex flex-col mx-3 rounded-2xl hover:bg-slate-900 hover:text-white items-center bg-gray-200 lg:w-85 md:w-full h-full mb-3 w-[95%] justify-center">
                 <img
                   src={b.image}
                   alt={b.title}
-                  className="w-full h-[70%] rounded-2xl"
+                  className="w-full lg:w-full md:w-full md:h-[70%] lg:h-[70%] h-70% rounded-2xl"
                 />
-                <h1 className="text-2xl text-start font-semibold">{b.title}</h1>
+                <h1 className="lg:text-2xl md:text-[22px] text-[20px] text-center font-semibold " >{b.title}</h1>
 
-                <h2 className="ml-3 text-sm text-gray-400 text-start mr-2">
+                <h2 className="mx-2 text-sm text-gray-400 text-start ">
                   {b.excerpt}
                 </h2>
 

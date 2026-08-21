@@ -5,11 +5,11 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="bg-white sticky top-0 right-0 left-0 mb-3 z-50">
-      <nav className="flex justify-between px-4 py-6 w-11/12 container mx-auto items-center">
+      <nav className="md:flex flex lg:flex justify-between px-4 py-6 w-11/12 container mx-auto items-center">
         <h1 className="font-black text-2xl text-slate-700 font-[Giest]">
           Han's Blog
         </h1>
-        <ul className="flex gap-3 text-slate-700 font-[Giest] bg-gray-100 rounded-3xl px-4 py-2">
+        <ul className="hidden gap-3 text-slate-700 font-[Giest] bg-gray-100 rounded-3xl px-4 py-2 md:flex lg:flex">
           <NavLink
             to="/"
             className={({ isActive }) =>

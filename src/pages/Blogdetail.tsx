@@ -13,14 +13,14 @@ const Blogdetail = () => {
       <img
         src={selectedBlogs?.image}
         alt={selectedBlogs?.title}
-        className="w-full h-150 relative"
+        className="w-full md:h-100 lg:h-150 h-56 relative"
       />
-      <div className="flex flex-col bg-gray-50 relative z-10 mx-auto -mt-46 w-[70%] px-2 py-4  gap-3 mb-10">
-        <h1 className="text-start font-black font-[Caveat] text-2xl">
-          <span className="font-[Lobster] text-sm">Written By: </span>
+      <div className="flex flex-col bg-gray-50 relative z-10 mx-auto md:-mt-46 lg:-mt-46 -mt-30 w-[70%] px-2 py-4  gap-3 mb-10">
+        <h1 className="text-start font-black font-[Caveat] md:text-2xl lg:text-2xl text-[15px]">
+          <span className="font-[Lobster] font-light md:text-sm lg:text-sm text-[12px]">Written By: </span>
           {selectedBlogs?.author}
         </h1>
-        <h1 className="text-center font-black text-slate-700 text-3xl font-[Geist]">
+        <h1 className="text-center font-black text-slate-700 md:text-3xl lg:text-3xl text-[18px] font-[Geist]">
           {selectedBlogs?.title}
         </h1>
         <div className="flex justify-center gap-6 ">
@@ -31,7 +31,7 @@ const Blogdetail = () => {
             {selectedBlogs?.category}
           </p>
         </div>
-        <h3 className="font-bold font-[Caveat] text-center text-2xl">
+        <h3 className="font-bold font-[Caveat] text-center lg:text-2xl md:text-[22px] text-[14px]">
           {selectedBlogs?.excerpt}
         </h3>
         <p className="text-start mx-6 text-slate-700">
